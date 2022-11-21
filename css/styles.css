@@ -837,3 +837,139 @@ body {
     visibility: hidden;
     pointer-events: none;
 }
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.info-form {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    margin-bottom: 2px;
+}
+
+.field-set {
+    display: flex;
+    position: relative;
+    margin-top: 28px;
+    width: 448px;
+    height: 40px;
+    margin-left: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field-set:has(.name-input:focus) {
+    border-color: #2196f3;
+}
+.field-set:has(.name-input:focus) .icon-field {
+    fill: #2196f3;
+}
+
+.icon-field {
+    width: 12px;
+    height: 12px;
+    margin-top: 14px;
+    margin-left: 15px;
+    fill: #212121;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-data .label {
+    position: absolute;
+    margin-top: -18px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.name-input {
+    margin-left: 15px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+.name-input:focus {
+    outline: none;
+}
+.comment-input {
+    width: 416px;
+    height: 96px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    margin-top: 12px;
+    margin-left: 16px;
+
+    border: none;
+}
+
+.field-comments {
+    display: flex;
+    position: relative;
+    margin-top: 28px;
+    width: 448px;
+    height: 120px;
+    margin-left: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-input::placeholder {
+    width: 416px;
+    height: 96px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-input:focus {
+    outline: none;
+}
+
+.field-comments:has(.comment-input:focus) {
+    border-color: #2196f3;
+}
