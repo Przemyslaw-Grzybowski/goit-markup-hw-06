@@ -568,16 +568,29 @@
                     </form>
                     <form name="commets field" class="form-data">
                         <fieldset class="field-comments">
-                            <label for="comments" class="label">Email</label>
+                            <label for="comments" class="label"
+                                >Komentarz</label
+                            >
 
                             <textarea
                                 name="comments-section"
                                 id="comments"
                                 class="comment-input"
                                 placeholder="Wprowadź tekst"
+                                rows="5"
                             ></textarea>
                         </fieldset>
                     </form>
+                    <label for="checkme" class="checkboxlabel">
+                        <input type="checkbox" id="checkme" class="checker" />
+                        <div class="checkbutton">
+                            <svg class="bug">
+                                <use href="/images/icons.svg#icon-mark"></use>
+                            </svg>
+                        </div>
+                        Oświadczam iż akceptuję Regulamin i Politykę
+                        Prywatności.
+                    </label>
                 </div>
             </div>
         </div>
