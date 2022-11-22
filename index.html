@@ -536,7 +536,7 @@
                     <form name="name of person" class="form-data">
                         <fieldset class="field-set">
                             <label for="name" class="label">Imie</label>
-                            <svg class="icon-field">
+                            <svg class="icon-field" width="12" height="12">
                                 <use href="/images/icons.svg#icon-name"></use>
                             </svg>
                             <input type="text" id="name" class="name-input" />
@@ -547,7 +547,7 @@
                             <label for="mobile-phone" class="label"
                                 >Telefon</label
                             >
-                            <svg class="icon-field">
+                            <svg class="icon-field" width="13" height="13">
                                 <use href="/images/icons.svg#icon-phone"></use>
                             </svg>
                             <input
@@ -560,7 +560,7 @@
                     <form name="email data" class="form-data">
                         <fieldset class="field-set">
                             <label for="email" class="label">Email</label>
-                            <svg class="icon-field">
+                            <svg class="icon-field" width="15" height="12">
                                 <use href="/images/icons.svg#icon-mail"></use>
                             </svg>
                             <input type="tel" id="email" class="name-input" />
@@ -583,14 +583,21 @@
                     </form>
                     <label for="checkme" class="checkboxlabel">
                         <input type="checkbox" id="checkme" class="checker" />
-                        <div class="checkbutton">
-                            <svg class="bug">
-                                <use href="/images/icons.svg#icon-mark"></use>
-                            </svg>
-                        </div>
-                        Oświadczam iż akceptuję Regulamin i Politykę
-                        Prywatności.
+
+                        <svg class="bug" width="16" height="15">
+                            <use href="/images/icons.svg#icon-mark"></use>
+                        </svg>
+                        <div class="checkboxborder"></div>
+                        Oświadczam iż akceptuję
+                        <a href="#" target="_blank" class="send-policy"
+                            >Regulamin
+                        </a>
+                        i
+                        <a href="#" target="_blank" class="send-policy"
+                            >Politykę Prywatności.</a
+                        >
                     </label>
+                    <button type="button" class="sendbtn">Wyślij</button>
                 </div>
             </div>
         </div>
