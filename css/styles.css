@@ -548,10 +548,15 @@ body {
     background-color: var(--active-color);
 }
 
-.footer-form {
+.signupbox {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    margin-left: 78px;
+    gap: 12px;
 }
+
 .label-news {
     display: flex;
     flex-direction: column;
@@ -565,40 +570,28 @@ body {
     text-transform: uppercase;
 
     color: #ffffff;
-
-    margin-bottom: 20px;
-    margin-top: 72px;
-    margin-left: 78px;
+    padding-bottom: 20px;
 }
 
-.email-field {
-    width: 358px;
-    height: 50px;
-    left: 815px;
-    top: 2787px;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    margin-top: 20px;
-}
 .email-input {
-    border: none;
-    background-color: transparent;
-
-    margin-top: 15px;
-    margin-left: 16px;
-
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    width: 320px;
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: transparent;
 
     color: rgba(255, 255, 255, 0.6);
 }
@@ -608,12 +601,12 @@ body {
 }
 
 .news-button {
-    position: relative;
     border: none;
     cursor: pointer;
     display: block;
     width: 200px;
     height: 50px;
+    margin-top: 15px;
 
     background-color: var(--active-color);
     font-family: inherit;
@@ -622,10 +615,6 @@ body {
     font-size: 16px;
     line-height: 1.86;
     border-radius: 4px;
-    padding: 0px;
-
-    margin-top: 108px;
-    margin-left: 12px;
 
     padding: 10px 28px 10px 42px;
 
@@ -803,11 +792,11 @@ body {
 }
 
 .modal {
-    margin-top: 221px;
+    position: sticky;
     width: 528px;
     height: 581px;
-    left: 536px;
-    top: 221px;
+    left: 35%;
+    top: 25%;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -914,8 +903,7 @@ body {
     line-height: 14px;
     letter-spacing: 0.01em;
     width: 100%;
-
-    color: rgba(117, 117, 117, 0.5);
+    color: #000;
 }
 .name-input:focus {
     outline: none;
@@ -930,7 +918,7 @@ body {
     line-height: 14px;
     letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
+    color: #000;
 
     margin-top: 12px;
     margin-left: 16px;
